@@ -1,0 +1,365 @@
+/*url para importar la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap'); 
+
+:root{ /*Se crean clases dentro del css para la fuente y sus colores */
+    --azul-tron: #7dfdfe;
+    --blanco-tron: #ffffff; 
+    --naranja-tron: #ff410dff;
+    --verde-tron: #95cc5eff;
+    --negro-tron: #000000;
+    --amarillo-tron: #f7c530ff;
+    --fuente-inter: "Orbitron", sans-serif;
+
+}
+
+*{ /*se asignan los valores para toda la paginado */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-inter);
+    text-decoration: none;
+    color: var(--azul-tron);
+}
+
+::selection{ /*al seleccionar palabras se da color al fondo y la letra seleccionada */
+    background: var(--verde-tron);
+    color: var(--blanco-tron);
+}
+
+body{ /*se fijan los valores del body*/
+    height: 100%;
+    background: url(../assets/tron.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{ /* se asignan valores a los contenidos dentro del encabezado*/
+    position: absolute;
+    margin: 10px 10px 10px 10px;
+}
+
+.presentacion{
+    display: flex;
+}
+
+header .logo{
+    align-items: flex-start;
+    width: 120px;
+    height: 50px;
+}
+
+header .titulo{
+    padding-left: 90px;
+    color: var(--verde-tron)
+}
+
+main{ /* se estilizan los valores del main de nuestra pagina */
+    display: flex;
+    flex-direction: row;
+}
+
+.cuerpo{ /* se estilizan los valores del cuerpo de nuestra pagina */
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.cuadro_de_texto{ /* se estilizan los valores del cuadro de texto de nuestra pagina */
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: none;
+    resize: none;
+    background: none;
+}
+
+.cuadro_de_texto::placeholder,:focus{
+    color: var(--azul-tron);
+}
+
+.cuerpo_exclamation{  /* se estilizan los valores del apartado de exclamacion de nuestra pagina */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+
+.texto_exclamation{ /* se estilizan los valores del texto de exclamacion de nuestra pagina */
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--naranja-tron);
+}
+
+.botones{ /* se estilizan los valores de los botones de nuestra pagina */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 550px;
+}
+
+.boton_encriptar{ /* se estiliza el boton encriptar */
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--blanco-tron);
+    background: var(--azul-tron);
+    border-radius: 30px;
+    border-color:  var(--azul-tron);
+    cursor: pointer;
+}
+
+.boton_encriptar:active{
+    color: var(--amarillo-tron);
+}
+
+.boton_desencriptar{ /* se estiliza el boton desencriptar */
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--blanco-tron);
+    background: var(--naranja-tron);
+    border-radius: 24px;
+    border-color:  var(--naranja-tron);
+    cursor: pointer;
+}
+
+.boton_copiar:active,
+.boton_desencriptar:active{
+    color: var(--amarillo-tron);
+}
+
+.cuerpo_lateral{ /* se estilizan los valores del cuerpo lateral */
+    width: 270px;
+    height: 580px;
+    background: var(--negro-tron);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.cuerpo_lateral_contenedor{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--negro-tron);
+}
+
+.muneco_tron{
+    background: none;
+}
+
+.texto_superior{ /* se estilizan los textos superior, inferior y el mensaje de nuestro cuerpo lateral */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--naranja-tron);
+}
+
+.texto_inferior{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--amarillo-tron);
+}
+
+.mensaje_lateral{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--azul-tron);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.mensaje_lateral:focus{
+    outline: none;
+}
+
+.boton_copiar{ /* se estiliza el boton copiar */
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 30px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--blanco-tron);
+    background: var(--verde-tron);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boton_encriptar:hover,
+.boton_desencriptar:hover,
+.boton_copiar:hover{
+    transform: scale(0.97);
+}
+
+footer{ /* se estiliza el pie de pagina incluyendo los iconos de redes sociales */
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 2px solid var(--verde-tron);
+    color: var(--negro-tron);
+    text-align: center;
+    height: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--azul-tron);
+}
+
+.insta:hover{
+    color: var(--amarillo-tron);
+    opacity: 0.5;
+}
+.github:hover{
+    color: var(--amarillo-tron);
+    opacity: 0.5;
+}
+
+.outlook:hover{
+    color: var(--amarillo-tron);
+    opacity: 0.5;
+}
+
+/*acomodo para pantallas aprox 1250px */
+
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cuerpo{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .botones{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .cuerpo_exclamation{
+        position: inherit;
+        margin: 15px;
+    }   
+    
+    .cuerpo_lateral{
+        width: 665px;
+        height: 300px;
+        box-shadow: 10px 24px 32px -8px var(--verde-tron);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .cuerpo_lateral_contenedor{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .muneco_tron{
+        display: none;
+    }
+
+    .boton_copiar{
+        position: inherit;
+        width: 100%;
+    }
+
+    .mensaje_lateral{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+/*acomodo para pantallas aprox 720px */
+@media(max-width: 720px){
+    
+    header .logo{
+        width: 100%;
+        padding: 2px;
+    }
+
+    .presentacion{
+        width: 100%;
+    }
+
+    header .titulo{
+        width: 100;
+        padding: 2px;
+        padding-left: 10px;
+    }
+    .cuadro_de_texto{
+        width:  90%;
+        font-size: 20px;
+    }
+
+    .botones{
+        display: grid;
+        gap: 20px;
+    }
+
+    .cuerpo_lateral{
+        width: 80%;
+    }
+
+    .pie_de_pagina{
+        font-size: 15px;
+    }
+}

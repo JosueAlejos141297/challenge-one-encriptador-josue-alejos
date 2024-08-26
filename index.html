@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge One Encriptador</title> <!-- Este es el titulo de la pagina principal -->
+    <link rel="stylesheet" href="./styles/style.css"><!-- Referenciamos el archivo css que le va a dar diseño a nuestro HTML -->
+</head>
+<!-- Aquí se comienza a desarrollar el cuerpo de la pagina en si-->
+<body>
+    <header> <!--Apartado superior o encabezado de la pagina donde va a estar colocado el icono de allura y el titulo del trabajo-->
+        <div class="presentacion">
+        <a href="https://www.aluracursos.com/">
+            <img class="logo" src="./assets/allura.png" alt="logo moderno de allura con fondo en azul">   
+        </a> 
+        <h1 class ="titulo">Bienvenido!</h1>
+    </div>
+    </header>
+    <main>
+        <section class="cuerpo"><!--Esta seccion corresponde al cuadro de texto donde se va a ingresar el texto a encriptar-->
+            <textarea class="cuadro_de_texto" placeholder="Ingrese el texto aqui..."></textarea>
+            <div class="cuerpo_exclamation"><!--Se agrega el aviso donde solo se permiten ciertos caracteres-->
+                <img class="exclamation" src="./assets/exclamation.png" alt="imagen que avisa sobre el contenido aceptado">
+                <p class="texto_exclamation">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones"><!--Agregamos los dos botones funcionales para nuestra pagina-->
+                <button type="submit" class="boton_encriptar">Encriptar</button>
+                <button type="submit" class="boton_desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="cuerpo_lateral"><!--Esta seccion corresponde al texto que se va a mostrar como resultado-->
+            <div class="cuerpo_lateral_contenedor"><!--Se colocan los valores para el lateral del cuerpo de la pagina-->
+                <img class="muneco_tron" src="./assets/muneco.png" alt="imagen personaje tron">
+                <p class="texto_superior">Ningún mensaje fue encontrado</p>
+                <p class="texto_inferior">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+                <textarea type="mensaje" class="mensaje_lateral" readonly></textarea>
+                <button type="submit" class="boton_copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer> <!--Esta seccion corresponde al final de la pagina o bien pie de pagina-->
+        <p class="pie_de_pagina"> Challenge ONE -- Encriptador de Texto -- </p>
+        <p class="pie_de_pagina"> Por Josue Alejos --México 2024-- </p>
+        <a href="https://www.instagram.com/">
+            <img src="./assets/insta.png" alt="logo de instagram" class="insta">
+        </a>
+        <a href="https://github.com/">
+            <img src="./assets/github.png" alt="logo de github" class="github">
+        </a>
+        <a href="https://www.microsoft.com/es-mx/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook">
+            <img src="./assets/outlook.png" alt="logo de outlook" class="outlook">
+        </a>
+
+    </footer>
+</body>
+    <script src="challenge.js"></script>
+</html>
